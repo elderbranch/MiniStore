@@ -25,7 +25,7 @@ const ProductDetails = () => {
 
     return (
         <>
-          <h1>Корзина товаров</h1>
+          <h1 className={styles.title}>Корзина товаров</h1>
           <div className={styles.product__details}>
               <img src={product[0].image} alt={product[0].title} />
               <div className={styles.product__info}>

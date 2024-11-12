@@ -1,16 +1,18 @@
+.title  {
+  font-weight: 600;
+  margin-top: 140px;
+}
+
 .product {
   &__details {
     display: flex;
-    width: 80vw;
     height: 320px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
     overflow: hidden;
     text-align: left;
 
-    & h2 {
-      font-weight: 600;
-    }
+    
 
     &_button {
       max-width: 520px;
@@ -44,24 +46,53 @@
   }
 }
 
+@media (max-width: 900px) {
+  .product {
+    flex-direction: column;
+    &__details {
+      margin-bottom: 50px;
+      flex-direction: column;
+      height: auto;
 
+      & button {
+        width: 100% ;
+      }
 
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__info {
+      width: auto;
+      overflow: hidden;
+      margin: 0;
+      padding: 10px;
+    }
+    &__desc {
+      margin-right: 0px;
+    }
+  }
+}
 @media (max-width: 450px) {
-  
   .product {
     &__details {
       flex-direction: column;
       height: auto;
       text-align: center;
-      margin: 0;
+      margin-bottom: 30px;
       & button {
         margin: 0 auto 20px auto;
         width: 80%;
       }
     }
-    
+
     &__info {
       margin: 0;
+    }
+
+    &__desc {
+      margin-right: 0px;
     }
   }
 }
