@@ -1,5 +1,4 @@
 import CardList from '../../CardList/CardList'
-import Header from "../../Header/Header"
 
 const CatalogPage = () => {
   return (
@@ -10,4 +9,4 @@ const CatalogPage = () => {
   )
 }
 
-export default CatalogPage
+export default CatalogPage;
